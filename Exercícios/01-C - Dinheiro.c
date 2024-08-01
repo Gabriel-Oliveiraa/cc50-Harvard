@@ -16,12 +16,14 @@ int main(void)
 
     }
     while (change < 0);
+
    do
    {
        change -= quarters;
        count++;
    }
     while (change >= 0.25);
+
     printf("%f\n", change);
    do
    {
@@ -29,18 +31,25 @@ int main(void)
        count++;
    }
     while (change >= 0.10);
+
+
     do
    {
        change -= nickles;
        count++;
    }
     while (change >= 0.05);
+
+
     do
    {
        change -= pennies;
        count++;
    }
     while (change >= 0.01);
+
+
 printf("%i\n", count);
 printf("%f\n", change);
+
 }
